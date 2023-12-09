@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iletişim |Harika Yemekler</title>
+    <!-- CSS files
+  ============== -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"  />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+  <style>
+
+
+      h1 {
+      font-size: 30px;
+      color: white; /* Başlık rengi */
+      
+    }
+    h2{
+font-size: 25px;
+      color: white;
+      }
+    ul {
+      color: white;
+      list-style-type: none; /* Liste işaretleri kaldırılsın */
+      padding: 0; /* Liste içi boşluk kaldırılsın */
+    }
+
+    li {
+      color: white;
+      margin-bottom: 10px; /* Her liste elemanı arasına boşluk ekleme */
+    }
+    
+  </style>
+  <style>
+    .kisiresim{
+      text-align: center;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+
+        .map-container {
+        position: relative;
+        overflow: hidden;
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 56.25%; /* İframe için oran (16:9) */
+    }
+
+    /* İframe stilini belirleme */
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;}
+   
+  </style>
+</head>
+<body>
+
+  
+  <h1 style="text-align: center;">şikayet ve önerileriniz</h1>
+  <hr>
+  <form action="submit_form.php" method="post">
+    <label for="name">Ad Soyad:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mesajınız:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Gönder</button>
+</form>
+<hr>
+
+  <div class="kisiresim">
+    <h1>Fatma Yaman - Baş Şef</h1>
+    
+    <ul>
+      <li>Telefon: +90 555 789 01**</li>
+      <li>Eposta: <a href="mailto:fatma.yaman@example.com">fatma.yaman@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Burak Çelik - Yardımcı Şef</h1>
+    <ul>
+      <li>Telefon: +90 555 890 12**</li>
+      <li>Eposta: <a href="mailto:burak.celik@example.com">burak.celik@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Selin Aksoy - Tarif Geliştirme Uzmanı</h1>
+    <ul>
+      <li>Telefon: +90 555 012 34**</li>
+      <li>Eposta: <a href="mailto:selin.aksoy@example.com">selin.aksoy@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Elif Yılmaz - Yönetim Başkanı</h1>
+    <ul>
+      <li>Telefon: +90 555 123 45**</li>
+      <li>Eposta: <a href="mailto:elif.yilmaz@example.com">elif.yilmaz@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Metin Kaya - Yardımcı Yönetim</h1>
+    <ul>
+      <li>Telefon: +90 555 234 56**</li>
+      <li>Eposta: <a href="mailto:ahmet.kaya@example.com">ahmet.kaya@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Ayşe Demir - İnsan Kaynakları</h1>
+    <ul>
+      <li>Telefon: +90 555 345 67**</li>
+      <li>Eposta: <a href="mailto:ayse.demir@example.com">ayse.demir@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Cemal Arslan - Pazarlama Müdürü</h1>
+    <ul>
+      <li>Telefon: +90 555 456 78**</li>
+      <li>Eposta: <a href="mailto:cemal.arslan@example.com">cemal.arslan@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Zeynep Yıldız - Reklam Uzmanı</h1>
+    <ul>
+      <li>Telefon: +90 555 567 89**</li>
+      <li>Eposta: <a href="mailto:zeynep.yildiz@example.com">zeynep.yildiz@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+  <div class="kisiresim">
+    <h1>Mehmet Ertürk - Arge</h1>
+    <ul>
+      <li>Telefon: +90 555 678 90**</li>
+      <li>Eposta: <a href="mailto:mehmet.erturk@example.com">mehmet.erturk@example.com</a></li>
+    </ul>
+  </div>
+  <hr size="6" width="50%" color="white">
+
+  <h1 style="text-align: center;">Bizi Bulmak isterseniz </h1>
+  <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8539.946803428275!2d29.923469742898483!3d40.82077734297256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1702154412296!5m2!1str!2str" 
+        width="100%" 
+        height="100%" 
+        style="border: 0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+
+
+
+    
+    <!-- Website Footer
+  =================== -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-6 col-sm-12 text-center">
+          <h3>Hakkında</h3>
+          <div class="footer-about"><p style="color: white;">© 2023 Harika Yemekler Tarifleri.   Tüm hakları saklıdır.</p>
+            <p style="color: white;">Adres:  Kabaoğlu, Baki Komsuoğlu bulvarı No:515, Umuttepe, 41001 İzmit/Kocaeli/Türkiye</p>
+            <p style="color: white;"> Telefon: 0123 456 789 </p>
+              <p style="color: white;">E-posta: harikayemekler@gmail.com</p>
+                <p style="color: white;"> Sitemizdeki içerikler yalnızca bilgi amaçlıdır. Sağlık sorunları için lütfen uzman bir sağlık profesyoneline danışın.</p>
+          </div>
+        </div>
+        <!-- Author -->
+        <div class="col-md-6 col-sm-12 text-center">
+          <h3>Yasal Bilgilendirme</h3>
+          <div class="footer-about">
+            <br><br><br>
+            <p style="color: white; "> Sitemizdeki içerikler yalnızca bilgi amaçlıdır. Sağlık sorunları için lütfen uzman bir sağlık profesyoneline danışın.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
