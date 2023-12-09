@@ -1,0 +1,795 @@
+/*
+** Fonts
+** -----------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@font-face {
+   font-family: 'Quirlycues';
+   src: url(../fonts/Quirlycues.ttf);
+}
+
+/*Base html-----------------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+content {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #222;
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  color: #222;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #eeac33db;
+  color: #666;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.50;
+  overflow-x: hidden;
+}
+
+/*logo*/
+.logo{
+  text-align: center;
+}
+.logo img{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* Alt menüyü varsayılan olarak gizleme aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.alt-menu ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1; /* Gerekli görünmesi durumunda diğer öğelerin önünde olmasını sağlar */
+}
+
+/* Alt menüyü sadece Meat üzerine gelindiğinde görünür yapma */
+.category-item:hover .alt-menu ul {
+  display: block;
+}
+
+/* Alt menü öğelerini düzenleme */
+.alt-menu ul li {
+  display: block;
+}
+
+/* Alt menü öğeleri arasındaki boşluğu ayarlama */
+.alt-menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.alt-menu ul li a:hover {
+  background-color: #ffffff;
+}
+
+/* Alt menüyü varsayılan olarak gizleme */
+.alt-menu ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1; /* Gerekli görünmesi durumunda diğer öğelerin önünde olmasını sağlar */
+}
+
+.category-item:hover .alt-menu ul {
+  display: block;
+}
+
+/* Alt menü öğelerini düzenleme */
+.alt-menu ul li {
+  display: block;
+}
+
+/* Alt menü öğeleri arasındaki boşluğu ayarlama */
+.alt-menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.alt-menu ul li a:hover {
+  background-color: #f0f0f0;
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+
+
+
+/*
+** Splash Screen
+** -----------------------------------------------------------------------------
+*/
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 42;
+}
+
+/*
+** Website Logo
+** -----------------------------------------------------------------------------
+*/
+
+#logo {
+  width: 100%;
+  min-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image:
+    radial-gradient(rgba(126, 0, 119, 0.15),
+    rgba(206, 169, 58, 0.763)),
+    url("../images/kitchen-banner.jpg");
+}
+#logo img {
+  height: 100px;
+  width: auto;
+  margin-top: 24px;
+}
+#logo h1 {
+  font-family: 'Quirlycues';
+  font-size: 72px;
+  font-weight: normal;
+  padding-top: 24px;
+  color: #f9f9f9;
+}
+
+/*
+** Recipes Categories
+** -----------------------------------------------------------------------------
+*/
+
+
+
+
+
+/* 1.Slider  */
+#myCarousel {
+  width: 760px;
+  height: 450px;
+  margin-right: 0;
+  margin-left: auto; /* Slider'ı yatayda ortala */
+  position: relative;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 25%; /* Sağ ve sol tuşların genişliği */
+  height: 65%; /* Sağ ve sol tuşların yüksekliği */
+  top: 0; /* Sağ ve sol tuşları yukarıda hizala */
+  background: none; /* Arka planı temizle */
+  border: none; /* Kenarlığı temizle */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 25%; /* Sağ ve sol tuş simgelerinin genişliği */
+  height: 65%; /* Sağ ve sol tuş simgelerinin yüksekliği */
+  background-size: 100%; /* Arka plan boyutunu ayarla */
+  background-color: transparent; /* Arka plan rengini temizle */
+}
+
+
+
+#categories {
+  background-color: #fff9c3;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+#categories h2 {
+  color: #333;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+.category-item {
+  border: 2px;
+  border-color: #ffd358;
+  border-radius: 2.5px;
+  border-style: solid !important;
+  background-color: #e8b23f;
+  color: #f9f9f9;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.category-item i {
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
+.show-all {
+  margin-top: 12px;
+}
+
+/*ikinci slider*/
+#myNewCarousel {
+  width: 760px; /* İstediğiniz genişlik */
+  height: 450px; /* İstediğiniz yükseklik */
+  margin-right: auto;
+  margin-left: 0;  /* Yatayda ortala */
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resimleri kesmeden uygun boyuta getir */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%;
+  height: 100%;
+  top: 0;
+  background: none;
+  border: none;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-color: transparent;
+}
+
+/*3. slider*/
+#myCarouselnew2 {
+  width: 760px; /* İstediğiniz genişlik */
+  height: 450px; /* İstediğiniz yükseklik */
+  margin-right: 0;
+  margin-left: auto; /* Yatayda ortala */
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resimleri kesmeden uygun boyuta getir */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%;
+  height: 100%;
+  top: 0;
+  background: none;
+  border: none;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-color: transparent;
+}
+
+
+
+        
+/* Iframe'i kapsayan div */
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 oranlı iframe için */
+}
+
+/* İframe stilini belirleme */
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+** Recipes Items
+** -----------------------------------------------------------------------------
+*/
+
+#items {
+  background-color: #f1f1f1;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+#items h2 {
+  color: #333;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+#items h3 {
+  margin-top: 12px;
+  color: #666;
+}
+.recipe-item {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.recipe-item img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+** Recipe Section
+** -----------------------------------------------------------------------------
+*/
+
+#recipe {
+  background-color: #f1f1f1;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+#recipe h2 {
+  color: #333;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  margin-bottom: 24px;
+  margin-top: 12px;
+}
+#recipe h3 {
+  background-color: #f1f1f1;
+  margin-top: 24px;
+}
+.recipe-picture {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  margin-top: 6px;
+  -webkit-box-shadow:
+    0px 0px 0px 2px rgba(0,0,0,0.6),
+    0px 0px 0px 14px #fff,
+    0px 0px 0px 18px rgba(0,0,0,0.2),
+    6px 6px 8px 17px #555;
+  -moz-box-shadow:
+    0px 0px 0px 2px rgba(0,0,0,0.6),
+    0px 0px 0px 14px #fff,
+    0px 0px 0px 18px rgba(0,0,0,0.2),
+    6px 6px 8px 17px #555;
+  box-shadow:
+    0px 0px 0px 2px rgba(0,0,0,0.6),
+    0px 0px 0px 14px #fff,
+    0px 0px 0px 18px rgba(0,0,0,0.2),
+    6px 6px 8px 17px #555;
+}
+.recipe-info .row {
+  margin-top: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.recipe-info i {
+  color: #a44c9f;
+}
+.recipe-ingredients {
+  background-color: #f9f9f9;
+  margin-top: 24px;
+}
+.ingredients-list dl {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.ingredients-list dt {
+  width: 15%;
+  float: left;
+  margin: 0 0 8px;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 37px;
+  background: #f9f9f9;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.ingredients-list dd {
+  width: 85%;
+  float: left;
+  margin: 0 0 8px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 37px;
+  font-weight: 600;
+  background: #a44c9f;
+  color: #f9f9f9;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.recipe-directions ol {
+    counter-reset: li;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.recipe-directions ol ol {
+    margin: 0 0 0 2em;
+}
+.recipe-directions li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #f9f9f9;
+    color: #222;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.recipe-directions li:hover{
+    background: #f1f1f1;
+}
+.recipe-directions li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #a44c9f;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+.recipe-directions li:after{
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+.recipe-directions li:hover:after{
+    left: -.5em;
+    border-left-color: #a44c9f;
+}
+
+/*
+** Website Footer
+** -----------------------------------------------------------------------------
+*/
+
+/* burası genişlik ayarı veriyor çorbalara*/
+.column-first {
+  width: 100%;
+  height: 350px;
+  background-color: #f19641;
+  color: white;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.column-first table img {
+  width: calc(30% );
+  height: calc(120% );
+}
+
+.column-second {
+  width: 100%;
+  height: 350px;
+  background-color: #f19641;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.column-third {
+  width: 100%;
+  height: 350px;
+  background-color: #f19641;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.icerik {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color:  rgb(251 216 49 / 41%);
+  color: #f9f9f9;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.footer-about {
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.footer-author {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.footer-author a {
+  color: #f9f9f9;
+  font-weight: bold;
+}
