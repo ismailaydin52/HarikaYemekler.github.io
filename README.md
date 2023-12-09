@@ -1,6 +1,5 @@
-# Recipe Book - HTML5 Template
-
-Recipe book is a responsive Bootstrap 4 template.
+Harika Yemekler
+Recipe book adlı githubdan template alınmıştır
 
 
 [Click here for the demo](https://jraleman.com/recipe-book-html-template)
